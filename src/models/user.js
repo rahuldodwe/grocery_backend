@@ -2,7 +2,7 @@ import mongoose, { mongo } from "mongoose";
 
 // Base User Schema
 const userSchema = new mongoose.Schema({
-    name: { type: string },
+    name: { type: String },
     role: {
         type: String,
         enum: ["Customer", "Admin", "DeliveryPartner"],
